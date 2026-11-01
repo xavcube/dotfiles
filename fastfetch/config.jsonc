@@ -1,0 +1,35 @@
+{
+  "logo": {
+    "source": "/home/xavier/Pictures/Fastfetch/turtwig.png",
+    "type": "auto",
+    "width": 30,
+    "padding": {
+      "top": 2,
+      "right": 6
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "break",
+    "colors"
+  ]
+}

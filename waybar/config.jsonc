@@ -1,0 +1,70 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "wireplumber",
+    "backlight",
+    "network",
+    "battery"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    }
+  },
+
+
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%d/%m/%Y - %H:%M:%S}",
+    "interval": 1
+  },
+
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{icon} {percent}%",
+	"format-icons": ["", "󰃞", "󰃠"]
+  },
+
+  "network": {
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{icon} {essid} {bandwidthDownBits}",
+    "format-ethernet": "󰈀 {bandwidthDownBits}",
+    "format-disconnected": "󰤠 No Network",
+    "interval": 5,
+    "tooltip": false
+  },
+
+
+
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "battery": {
+	  "states": {
+	  	"warning": 20,
+	  	"critical": 5
+	  },
+	  "events": {
+	  	"on-discharging-warning": "notify-send -u normal 'Low Battery'",
+	  	"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+	  	"on-charging-100": "notify-send -u normal 'Battery Full!'"
+	  },
+	"format": "{capacity}% {icon}",
+	"format-charging": "{capacity}% {icon} 󱐋",
+	"format-icons": ["", "", "", "", ""],
+	"max-length": 25,
+  "interval": 0
+  }
+}

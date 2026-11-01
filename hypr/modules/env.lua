@@ -1,0 +1,13 @@
+--xavs hyprland lua config
+
+-------------------------------
+---- ENVIRONMENT VARIABLES ----
+-------------------------------
+
+-- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+
+hl.env("XCURSOR_SIZE", "12")
+hl.env("HYPRCURSOR_SIZE", "20")
+hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
+hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Classic")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
